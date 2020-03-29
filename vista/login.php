@@ -14,11 +14,7 @@
         <input type="text" name="usuario"placeholder="Usuario" class="bordes" autofocus/>
         <input type="password" name="password" placeholder="Contraseña" class="bordes"/>
         <input type="submit" value="Ingresar">
-        <?php  if(!empty($errores)): ?>
-          <ul>
-              <?php echo $errores; ?>
-          </ul>
-        <?php  endif; ?>
+       
       </form>
 </body>
 </html>
