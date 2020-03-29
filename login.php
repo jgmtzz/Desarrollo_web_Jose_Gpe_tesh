@@ -20,7 +20,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 	$statement ->execute(array(':usuario'=> $usuario,':password'=> $password));
 
 	$resultado = $statement->fetch();
-	if($resultado !==false){
+	if($resultado ==false){
 		$_SESSION['usuario'] = $usuario;
 		header('Location: index.php');
 	}else{
