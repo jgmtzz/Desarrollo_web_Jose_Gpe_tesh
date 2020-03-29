@@ -1,4 +1,4 @@
-
+<html>
 <?php include 'plantillas/header.php'; ?>
 	<section class="main">
 		<div class="wrapp">
@@ -26,5 +26,5 @@
 				</article>
 	</section>
 <?php include 'plantillas/footer.php'; ?>
-</body>
+</body> 
 </html>

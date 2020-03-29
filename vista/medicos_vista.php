@@ -1,4 +1,4 @@
-
+<html>
 <?php include 'plantillas/header.php'; ?>
 	<section class="main">
 		<div class="wrapp">

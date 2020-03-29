@@ -1,4 +1,4 @@
-
+<html>
 <?php include 'plantillas/header.php'; ?>
 	</div>
 	<section class="main">
@@ -12,7 +12,7 @@
 						<table class="tabla">
 						  <tr>
 							<th>#</th>
-							<th>Nombre</th>
+							<th>Nombre</th> 
 							<th colspan="2">Opciones</th>
 						  </tr>
 

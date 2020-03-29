@@ -1,5 +1,5 @@
-
-<?php include 'plantillas/header.php'; ?>
+<html>
+ <?php include 'plantillas/header.php'; ?>
 	<section class="main">
 		<div class="wrapp">
 			<?php include 'plantillas/nav.php'; ?>

@@ -1,3 +1,4 @@
+<html>
 <?php include 'plantillas/header.php'; ?>
 	</div>
 	<section class="main">
