@@ -10,11 +10,12 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 	$password = hash('sha512', $password);
 	$errores ='';	
 	try{
-		$conexion = new PDO('mysql:host=localhost;dbname=centromedico','root','');
+		$con=mysqli_init(); [mysqli_ssl_set($con, NULL, NULL, {ca-cert filename}, NULL, NULL);] mysqli_real_connect($con,'servermysqlj.mysql.database.azure.com', 'myadmin@servermysqlj', 'La784150_', 'centromedico',3366 );
+//		$conexion = new PDO('mysql:host=localhost;dbname=centromedico','root','');
 	}catch(PDOException $e){
 		echo "Error: ". $e->getMessage();
 	}
-	$statement = $conexion -> prepare(
+	$statement = $con -> prepare(
 			'SELECT * FROM usuarios WHERE usuario = :usuario AND pass= :password');
 
 	$statement ->execute(array(':usuario'=> $usuario,':password'=> $password));
